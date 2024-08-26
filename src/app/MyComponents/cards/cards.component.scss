@@ -1,0 +1,9 @@
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .card {
+    min-width: 250px;
+    margin-right: 15px;
+  }
