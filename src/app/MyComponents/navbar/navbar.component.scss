@@ -1,0 +1,59 @@
+.navbar-custom {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.search-bar {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-icons a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-icons a:hover {
+    color: #000;
+}
+
+.navbar-icons .badge {
+    background-color: #ff4e4e;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.navbar-icons img {
+    width: 24px;
+    height: 24px;
+}
