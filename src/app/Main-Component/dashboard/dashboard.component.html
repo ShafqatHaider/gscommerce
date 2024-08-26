@@ -19,7 +19,7 @@
   <div class="flex items-center  rtl:space-x-reverse mb-4 lg:mb-0">
     <a href="https://flowbite.com" class="flex items-center">
       <p
-        class=" text-2xl lg:text-3xl lg:mr-10 font-semibold dark:text-white whitespace-nowrap"
+        class=" text-2xl lg:text-3xl mt-4 lg:mr-10 font-semibold dark:text-white whitespace-nowrap"
       >
         GS ECOMMERCE
       </p>
@@ -67,7 +67,7 @@
           <span class="sr-only">Open user menu</span>
           <img
             class="w-12 h-12 rounded-full"
-            src="assets/images/profile.png"
+            src="assets/images/profile.jpg"
             alt="user photo"
           />
         </button>
@@ -125,79 +125,84 @@
 </nav>
 
 <!-- Mobile Menu: Visible only on small screens -->
-<div *ngIf="showMenu" class="fixed inset-0 bg-gray-800 bg-opacity-75 lg:hidden">
-  <div class="w-1/2 bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] min-h-screen p-4">
-    <button (click)="toggleMenu()" class="text-white">✕ Close</button>
-    <ul class="flex flex-col font-medium space-y-4 text-2xl text-center mt-2">
-      <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
-        <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
-      </li>
-      <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
-        <a href="#" class="text-gray-900 dark:text-white hover:underline">Company</a>
-      </li>
-      <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
-        <a href="#" class="text-gray-900 dark:text-white hover:underline">Team</a>
-      </li>
-      <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
-        <a href="#" class="text-gray-900 dark:text-white hover:underline">Features</a>
-      </li>
-    </ul>
+<div style="background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+  <div *ngIf="showMenu" class="fixed inset-0 bg-gray-800 bg-opacity-75 lg:hidden">
+    <div class="w-1/2 bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] min-h-screen p-4">
+      <button (click)="toggleMenu()" class="text-white">✕ Close</button>
+      <ul class="flex flex-col font-medium space-y-4 text-2xl text-center mt-2">
+        <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
+          <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+        </li>
+        <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
+          <a href="#" class="text-gray-900 dark:text-white hover:underline">Company</a>
+        </li>
+        <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
+          <a href="#" class="text-gray-900 dark:text-white hover:underline">Team</a>
+        </li>
+        <li class="bg-gradient-to-r from-[#5D26C1] via-[#a17fe0] to-[#59C173] border border-gray-300 dark:border-gray-600 rounded-lg p-4 transition-transform duration-500 ease-out animate-slide-in">
+          <a href="#" class="text-gray-900 dark:text-white hover:underline">Features</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<!-- Main Content -->
-
-<div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-  <button
-    type="button"
-    class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+  
+  <!-- Main Content -->
+  
+  <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+    <button
+      type="button"
+      class="text-white border bg-dark-400 hover:border-gray-200 hover:bg-red-950 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700  focus:outline-none rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 "
+    >
+      Invoice
+    </button>
+    <button
+      type="button"
+      class="text-white border bg-dark-400 hover:border-gray-200 hover:bg-red-950 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700  focus:outline-none rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 "
+    >
+      Items Sold
+    </button>
+    <button
+      type="button"
+      class="text-white border bg-dark-400 hover:border-gray-200 hover:bg-red-950 dark:border-gray-900 dark:bg-gray-900  focus:outline-none rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 "
+    >
+      Profit
+    </button>
+  </div>
+  
+  <div
+    class="grid  sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-4 px-2 gap-4 slide-up"
   >
-    Invoice
-  </button>
-  <button
-    type="button"
-    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800"
-  >
-    Items Sold
-  </button>
-  <button
-    type="button"
-    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800"
-  >
-    Profit
-  </button>
-</div>
-
-<div
-  class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 px-2 gap-4 slide-up"
->
-  <!-- First row: Four grids -->
-  <div
-    class="w-full h-48 md:h-48 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
-  <div
-    class="w-full h-48 md:h-48 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
-  <div
-    class="w-full h-48 md:h-48 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
-  <div
-    class="w-full h-48 md:h48o bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
-
-  <!-- Second row: Two grids -->
-  <div
-    class="w-full lg:col-span-2 h-48 md:h-48 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
-  <div
-    class="w-full lg:col-span-2 h-48 md:h-48 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
-
-  <!-- Third row: Three grids -->
-  <div
-    class="w-full lg:col-span-3 h-48 md:h-48 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
-  <div
-    class="w-full h-48 md:h-48 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-  ></div>
+    <!-- First row: Four grids -->
+    <div
+      class="w-full h-48 md:h-48  border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+    <div
+      class="w-full h-48 md:h-48  border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+    <div
+      class="w-full h-48 md:h-48  border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+    <div
+      class="w-full h-48 md:h-48 border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+  
+    <!-- Second row: Two grids -->
+    <div
+      class="w-full lg:col-span-2 h-48 md:h-48  border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+    <div
+      class="w-full lg:col-span-2 h-48 md:h-48  border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+  
+    <!-- Third row: Three grids -->
+    <div
+      class="w-full lg:col-span-3 h-48 md:h-48  border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+    <div
+      class="w-full h-48 md:h-48  border border-gray-200 rounded-lg shadow dark:bg-gray-800 "
+    ></div>
+  </div>
 </div>
