@@ -38,14 +38,14 @@ export class DashboardComponent implements OnInit {
     }
   }
   showMenu = false;
-  isMobile = window.innerWidth < 768;
+  isMobile = window.innerWidth <= 768;
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }
 
   onResize(event: any) {
-    this.isMobile = event.target.innerWidth < 768;
+    this.isMobile = event.target.innerWidth <= 768;
   }
 
 
