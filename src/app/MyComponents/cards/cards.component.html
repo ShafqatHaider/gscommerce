@@ -1,121 +1,3 @@
-<!-- <div class="container my-3">
-  <div class="container mt-5">
-    <div class="card-slider">
-      <div class="card">
-        <img src="assets/images/watch.jpg" class="card-img-top" alt="Watch" />
-        <div class="card-body">
-          <h5 class="card-title">ACCESSORIES WATCH</h5>
-          <p class="card-text">Swiss Watch</p>
-          <p class="card-text"><del>$399.00</del> $299.00</p>
-          <span class="badge badge-danger">-25%</span>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/images/belt.jpg" class="card-img-top" alt="Belt" />
-        <div class="card-body">
-          <h5 class="card-title">ACCESSORIES BELT</h5>
-          <p class="card-text">Belt</p>
-          <p class="card-text">$25.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/images/jacket.jpg" class="card-img-top" alt="Coat" />
-        <div class="card-body">
-          <h5 class="card-title">Man Shaggy Coat</h5>
-          <p class="card-text">$229.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/shirt.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/jeans.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/cat_women.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/sports_shoes.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/cat_men.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/Warm_jacket.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/jacket_coat.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="assets/images/jacket.jpg"
-          class="card-img-top"
-          alt="Blue Shirt"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Blue Shirt</h5>
-          <p class="card-text">$119.00</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 <div class="container">
   <div class="row flex-nowrap overflow-auto">
     <div class="col-6 col-md-4 col-lg-3" *ngFor="let card of cards">
@@ -123,12 +5,14 @@
         <div class="card">
           <img src="{{ card.image }}" class="card-img-top" alt="..." />
           <div class="card-body text-center">
-            <h5 class="card-title">{{ card.title }}</h5>
             <p class="card-text">{{ card.category }}</p>
-            <p class="card-price">{{ card.price }}</p>
-            <a href="#" class="btn btn-primary">
-              <i class="fas fa-home"></i>Add to cart
-            </a>
+            <h5 class="card-title font-bold fs-5">{{ card.title }}</h5>
+            <p class="card-price fs-5">{{ card.price }}</p>
+            <div class="icons">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-bag"></i>
+              <i class="bi bi-search"></i>
+            </div>
           </div>
         </div>
       </div>

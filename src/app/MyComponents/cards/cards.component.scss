@@ -24,3 +24,16 @@
 .row.flex-nowrap::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+.icons{
+  padding: 10px;
+}
+.icons i{
+font-size: 25px;
+margin-right: 5px;
+padding: 5px 10px 5px 10px;}
+.icons i:hover{
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #3d5167;
+  color: white;
+}
